@@ -1,1 +1,13 @@
-
+{
+   ],
+   "source": [
+    "#13.3 Parse the date from today_string.\n",
+    "\n",
+    "from datetime import datetime\n",
+    "\n",
+    "with open(\"today.txt\", \"r\") as f:\n",
+    "    today_string = f.read()\n",
+    "\n",
+    "today = datetime.strptime(today_string, \"%m/%d/%Y\").date()\n"
+   ]
+  },
